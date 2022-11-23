@@ -91,7 +91,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y" >> .config #smartdns
         echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNSBIN=y" >> .config #smartdns二进制文件
         echo "CONFIG_FIRMWARE_INCLUDE_SQM=y" >> $m.config #SQM
-        echo "CONFIG_FIRMWARE_INCLUDE_iperf3=y >> $m.config #iperf3
+        echo "CONFIG_FIRMWARE_INCLUDE_iperf3=y >> .config #iperf3
         echo "CONFIG_FIRMWARE_INCLUDE_OC=y" >> $m.config #CPU超频开关
         echo 'CONFIG_FIRMWARE_MT7621_OC="0x312"' >> $m.config #此处填写对应频率的十六进制：1000Mhz=0x312 1100Mhz=0x362 1120Mhz=0x372 1200Mhz=0x3B2
         else
